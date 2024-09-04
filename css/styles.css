@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Poppins:wght@400;500&family=Roboto:wght@400;700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Poppins:wght@400;500&family=Roboto:wght@400;700&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #183b56;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #577592;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container-style {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.container {
+    /* used to keep a aligned line in left side ba dike akta ak haath gap chere sob content thakbe*/
+    margin-inline: auto;
+    max-width: 1180px;
+    padding-inline: 25px;
+}
+
+.top-banner {
+    background-image: url('../assets/asset\ 30.png');
+    background-color: #4fb3d4;
+    background-size: 300px;
+    height: 45px;
+}
+
+.flex {
+    /*universal flex class to make items side by side and align at cenetr*/
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-nav {
+    justify-content: space-between;
+    /*space b/w image and menu bar*/
+    margin-top: 10px;
+}
+
+.company-logo img {
+    width: 200px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    /*content aligned(menu bar eg price ,listing etc) to right side*/
+    gap: 30px;
+}
+
+.hover-links {
+    color: #183b56;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hover-links:hover {
+    /* hover korle color change hobe r haath er sign ashbe*/
+    color: aqua;
+    cursor: pointer;
+}
+
+.primary-button{ /* to generate button*/
+   background-color: #009EFF;
+   border-radius: 5px;
+   font-weight: 700;
+   color: white !important;
+   padding: 10px 24px;
+   box-shadow: 0 0 2px blue;
+   transition: 0.2s ease-out;
+}
+.primary-button:hover{   /*to generate hoevr in button and color change*/
+    background-color: #1d69a3;
+}
+.secondary-button{
+    border: 0.5px solid black;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #183b56;
+    padding: 10px 24px;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    color: #1d69a3;
+    border-color: #009EFF;
+}
+header{
+    padding: 50px;
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-right img{
+    width: 600px;
+}
+.get-started-btn{
+    margin-top: 20px;
+}
+.header-left h1{
+    margin-top:20px;
+}
+.header-left{
+   max-width: 40vw;
+}
+.logo{
+    height: 50px;
+    margin-top: 10px;
+}
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.features-header{
+    text-align: center;
+}
+.features-section{  /*back img add korlam */
+    padding-top: 80px;
+    background-image: url(../assets/asset\ 32.svg);
+    background-repeat: no-repeat; /*eta bar bar ashcjilo tai no repeat korlam ekbar ashe*/
+    background-position: center; /*back img ta k center kore dilam*/
+}
+.features-section a{
+    margin-top: 10px;
+}
+.features-card{      
+    flex-direction: column;   /*card soting r sob lekha jate niche niche ashe tai flex direction:column koro*/
+    gap: 10px;
+    max-width: 30%; /*sob card soritng nd all jate pasha pashi ashe tai eta define koro*/
+    text-align: center;
+}
+.features-card img{
+    width: 40px;
+}
+.features-area{   /* card sorting nd baki elements ek line a chilo otake diff line korar jonne and majhe r opor niche gap anar jonne ei gulo korte hobe*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 40px;
+}
+.big-feature-section{
+    margin-top: 50px;
+}
+.big-feature-container{
+    gap: 30px;
+}
+.feature-img img{
+    width:500px;
+}
+.feature-desc{
+    flex-direction: column;
+    align-items: flex-start; /*flex div er ja content ache seta left side theke align hobe (effortless validation /n design profession...)*/
+    gap: 20px;
+}
+.examples-features-header{
+    text-align: center;
+}
+.examples-features-header a{
+    margin-top: 10px;
+}
+.example-card1{
+    min-height: 270px;
+    background-color: black;
+    width: 23%;
+    position: relative;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(../assets/asset\ 34.jpeg);
+}
+.example-card2{
+    min-height: 270px;
+    background-color: black;
+    width: 23%;
+    position: relative;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(../assets/asset\ 35.jpeg);
+}
+.example-card3{
+    min-height: 270px;
+    background-color: black;
+    width: 23%;
+    position: relative;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(../assets/asset\ 36.jpeg);
+}
+.example-card4{
+    min-height: 270px;
+    background-color: black;
+    width: 23%;
+    position: relative;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(../assets/asset\ 37.jpeg);
+}
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 20px;
+    color: white;
+}
+.example-area{
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.example-card1:hover{
+    box-shadow: 0 0 10px #888;
+}
+.example-card2:hover{
+    box-shadow: 0 0 10px #888;
+}
+.example-card3:hover{
+    box-shadow: 0 0 10px #888;
+}
+.example-card4:hover{
+    box-shadow: 0 0 10px #888;
+}
+.container-cta{
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    color: white;
+}
+.cta-section{ /* jodi bg color container-cta te ditam tale screen er 2 side gap theke jeto coz container er width already ache tai cta-section a define korlam*/
+    background-color: #183b54;
+    padding: 60px;
+}
+.container-cta p{
+    color: white;
+}
+.link-column{
+    flex-direction: column;
+    gap: 10px;
+    color: #577592;
+    align-items: flex-start;
+}
+.footer-section{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer{
+    background-color: #ebf2fa;
+    padding: 60px;
+}
+.sub-footer{
+    background-color: #b9cde4;
+    padding: 25px;
+}
+.sub-footer-desc{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.sub-footer a img{
+    width: 20px;
+}
+.hover-link1{
+    color: #6B728E
+}
